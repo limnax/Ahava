@@ -1,22 +1,20 @@
-package com.studentclass.student.model;
+package com.example.demo.model;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Entity
-@Table(name = "students")
-@Data
+@Table(name = "classes")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+@Data
+public class Classrooms {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
-    private Integer studId;
-    private String firstname;
-    private String lastname;
     private Integer classId;
+    private String className;
+    private Integer stream;
 }

@@ -1,10 +1,11 @@
-package com.example.demo.controller;
+package com.studentclass.classes.controller;
 
-import com.example.demo.model.ClassroomDto;
-import com.example.demo.model.Classrooms;
-import com.example.demo.service.ServiceClass;
+import com.studentclass.classes.model.ClassroomDto;
+import com.studentclass.classes.model.Classrooms;
+import com.studentclass.classes.service.ServiceClass;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -16,11 +17,13 @@ public class ClassController {
     private final ServiceClass serviceClass;
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public void addClasses(@RequestBody Classrooms classrooms){
         serviceClass.addClassRooms(classrooms);
     }
 
     @GetMapping("/{classId}")
+    @ResponseStatus(HttpStatus.OK)
     public ClassroomDto getClassWithStudents(@PathVariable("classId") Integer classId){
         return serviceClass.getAllStudentsInAClass(classId);
     }

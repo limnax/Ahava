@@ -1,12 +1,12 @@
-package com.example.demo.service;
+package com.studentclass.classes.service;
 
-import com.example.demo.Clients.StudentClient;
-import com.example.demo.Clients.SubjectsClient;
-import com.example.demo.model.ClassroomDto;
-import com.example.demo.model.Classrooms;
-import com.example.demo.model.StudentDto;
-import com.example.demo.model.SubjectsDto;
-import com.example.demo.repository.ClassRepository;
+import com.studentclass.classes.Clients.StudentClient;
+import com.studentclass.classes.Clients.SubjectsClient;
+import com.studentclass.classes.model.ClassroomDto;
+import com.studentclass.classes.model.Classrooms;
+import com.studentclass.classes.model.StudentDto;
+import com.studentclass.classes.model.SubjectsDto;
+import com.studentclass.classes.repository.ClassRepository;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

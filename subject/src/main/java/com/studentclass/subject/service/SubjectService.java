@@ -13,20 +13,24 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import com.studentclass.Mapper.AppConfig;
 @RequiredArgsConstructor
 @Service
-@Builder
+//@Builder
 public class SubjectService {
     @Autowired
     private final SubjectRepository subjectRepository;
-    @Autowired
-    private final ModelMapper mapper;
+
+    AppConfig conf = new AppConfig();
+//    @Autowired
+//    private final ModelMapper mapper;
 
 
     public void addSubjects(Subject subjectDto){
         subjectRepository.save(subjectDto);
     }
     public List<Subject> getAllSubjects(){
+        System.out.println("???????????????????????????");
         return  subjectRepository.findAll();
     }
 
@@ -44,7 +48,7 @@ public class SubjectService {
     }
     private SubjectDto mapToDTO(Subject subject) {
         //convert entity to DTO
-        SubjectDto newSubjectDto = mapper.map(subject, SubjectDto.class);
+        SubjectDto newSubjectDto = conf.modelMapper().map(subject, SubjectDto.class);
 
         return newSubjectDto;
     }

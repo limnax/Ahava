@@ -10,7 +10,14 @@
         <option value="$PROJECT_DIR$/subject/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateways/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/MapperConfiguration/pom.xml" />
+        <option value="$PROJECT_DIR$/Mapper/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/MapperConfiguration/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

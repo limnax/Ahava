@@ -8,15 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
+        <module name="Mapper" />
         <module name="discovery-server" />
         <module name="class" />
         <module name="student" />
         <module name="subject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MapperConfiguration" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Mapper" options="-parameters" />
+      <module name="MapperConfiguration" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="class" options="-parameters" />
       <module name="discovery-server" options="-parameters" />

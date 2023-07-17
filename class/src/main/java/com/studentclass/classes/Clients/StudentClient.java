@@ -1,6 +1,6 @@
-package com.example.demo.Clients;
+package com.studentclass.classes.Clients;
 
-import com.example.demo.model.StudentDto;
+import com.studentclass.classes.model.StudentDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

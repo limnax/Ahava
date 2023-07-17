@@ -27,7 +27,6 @@ public class StudentController {
     }
     @RequestMapping("/class/{classId}")
   public List<StudentDto> getAllStudentsInAClass(@PathVariable("classId") Integer classId){
-        System.out.println("...................??????????? "+classId);
         return studentService.getStudentsFromAClass(classId);
     }
 }

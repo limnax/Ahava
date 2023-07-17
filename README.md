@@ -106,5 +106,6 @@ Now access the students in a class and the subjects each student take through
 }
 ```
 Active instances on Eureka Server  http://localhost:8761/
+![eureka](https://github.com/limnax/Ahava/assets/6594309/034bc960-4356-47fc-bc60-ea32c413b654)
 
-![](/resources/eureka.png)
+

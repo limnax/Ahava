@@ -23,9 +23,8 @@ cd api-gateway && mvn spring-boot:run
 Add classes- /POST http://localhost:8970/classes
 ```
 {
-    "firstname":"sammy",
-    "lastname":"oduor",
-    "classId":2
+    "className":"STD6",
+    "stream":2
 }
 ```
 Add Subjects - /POST http://localhost:8970/subjects

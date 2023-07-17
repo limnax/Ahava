@@ -105,3 +105,6 @@ Now access the students in a class and the subjects each student take through
     ]
 }
 ```
+Active instances on Eureka Server  http://localhost:8761/
+
+![](/resources/eureka.png)
